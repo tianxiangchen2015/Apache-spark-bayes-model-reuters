@@ -28,6 +28,12 @@ Required softwares:
 3. Vectorizing the documents and TF-IDF calculation. Load the documents into Spark Context, which is a resilient distributed dataset (RDD). RDD is a collection of elements partitioned across the nodes of the cluster that can be operated on in parallel. After load the data into Spark, implement a vector representation of the documents using TF-IDF method. Term frequency  is the number of times that term  appears in document . And IDF is the inverse document frequency
 4. Training and testing Naïve bayes model. Randomly split all the data into two parts – 60% of data as training data and 40% as testing data. 
 
+## Training and testing
+
+1. parse.py -- parsing and cleaning the raw reuters-21578 data(XML). Then save the clean data into train_data_final.txt.
+2. trainNaiveBayes.py -- Calculate TF-IDF. Train and test the naive bayes model.
+3. xmlOnline.py -- Extract text online to test our bayes model.
+
 ## Author
 
 * **Tianxiang Chen (ORNL Research Assistant)** - [Linkedin HomePage](https://www.linkedin.com/in/tianxiang-chen-946543114?trk=nav_responsive_tab_profile)
